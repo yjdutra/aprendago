@@ -2,7 +2,7 @@
 https://www.youtube.com/c/AprendaGo/videos
 
 Aula Atual: Operador curto de declaração
-🔗 https://www.youtube.com/watch?v=QT7YvrEWMGE&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg&index=9
+🔗 https://www.youtube.com/watch?v=voisg61hPXA&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg&index=22
 
 🚀 Cap. 1
 ### Uma visão geral do curso e funcionamento.
