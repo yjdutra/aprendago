@@ -6,20 +6,11 @@ import "fmt"
 
 type Mytype int
 
-var x Mytype
-var y int
-
 func main() {
 
-	fmt.Println("1.", x)
-	fmt.Printf("2. %T\n", x)
-	x = 42
-	fmt.Println("4.", x)
+	x := 32
 
-	fmt.Println("Inicio ex. 05")
-
-	fmt.Println("1. Convertendo x em inteiro e atribuindo seu valor a y")
-	y = int(x)
-	fmt.Println("2. Valor de y = ", y)
-	fmt.Printf("3. O tipo de y = %T\n", x)
+	fmt.Println("1. decimal", x)
+	fmt.Printf("2. binario. %b\n", x)
+	fmt.Printf("3. hexa. %x\n", x)
 }

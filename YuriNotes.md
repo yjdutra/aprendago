@@ -1,26 +1,32 @@
 🔗 Link Curso em videos:
 https://www.youtube.com/c/AprendaGo/videos
 
-Aula Atual: Operador curto de declaração
-🔗 https://www.youtube.com/watch?v=voisg61hPXA&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg&index=22
+Aula Atual: Cap. 6 – Fluxo de Controle – 1. Entendendo fluxo de controle
+🔗 https://www.youtube.com/watch?v=1G-tbQ6UE_A&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg&index=38
 
 🚀 Cap. 1
+
 ### Uma visão geral do curso e funcionamento.
 
 🚀 Cap. 2 (Variáveis, Valores & Tipos)
+
 ### Go Playground funcionamento.
+
 🔗 https://play.golang.org
+
 - Run: Executa o Codigo
 - Share: Compartilhar o Codigo via um link (util para foruns)
 - Format: Formata o codigo
 - Imports: Identifica packages no codigo e importa os usatos e não importados e exclui os importados e não utilizados
 
 ### Estrutura do código:
+
 - package main: Indica qual o arquivo principal que sera executado.
 - func main: Compreende todas as ações do código, (O loop de C).
 - import: Packages importados.
 
 ### Packages:
+
 - Coleções de funções para serem utilizadas. um package possui n funções.
 - Notação: pacote.Identificador.
   -- Exemplo: fmt.Println()
@@ -50,6 +56,7 @@ Aula Atual: Operador curto de declaração
               }
 
 ### Operador curto de declaração
+
 - := parece uma marmota (gopher).
 - Uso:
   -- Tipagem automática
@@ -64,49 +71,97 @@ Aula Atual: Operador curto de declaração
   -- = para atribuir valores a variáveis já existentes
 
 ### A palavra-chave `var`
+
 - Forma de declarar variavel fora de codeblocks
   -exemplo: var y = 10
 - Utilizada quando variavel necessita de, package level scope.
 
 ### Explorando tipos
+
 - Tipos em Go são estáticos.
   -- Uma variavel de tipo number só pode receber numbers.
 - Use := sempre que possível.
 - Use var para package-level scope.
 
 ### Valor zero
+
 - Os zeros:
-    -- ints: 0
-    -- floats: 0.0
-    -- booleans: false
-    -- strings: ""
-    -- pointers, functions, interfaces, slices, channels, maps: nil
+  -- ints: 0
+  -- floats: 0.0
+  -- booleans: false
+  -- strings: ""
+  -- pointers, functions, interfaces, slices, channels, maps: nil
 
 ### O pacote fmt
-- Strings: 
-    --Interpreted string literals
-        ---Strings interpretadas, (yuri tem x anos) === yuri tem 27 anos
-    --Raw string literals.
-        ---Strings literais, (`yuri tem x anos`) === yuri tem x anos
+
+- Strings:
+  --Interpreted string literals
+  ---Strings interpretadas, (yuri tem x anos) === yuri tem 27 anos
+  --Raw string literals.
+  ---Strings literais, (`yuri tem x anos`) === yuri tem x anos
 - Print printar valor na tela:
-    -- func Print(a ...interface{}) (n int, err error)
-    -- func Println(a ...interface{}) (n int, err error)
-    -- func Printf(format string, a ...interface{}) (n int, err error)
+  -- func Print(a ...interface{}) (n int, err error)
+  -- func Println(a ...interface{}) (n int, err error)
+  -- func Printf(format string, a ...interface{}) (n int, err error)
 - Sprint() Atribui o valor em () para alguma váriavel (STRINGS Apenas):
-    -- func Sprint(a ...interface{}) string
-    -- func Sprintf(format string, a ...interface{}) string
-    -- func Sprintln(a ...interface{}) string
+  -- func Sprint(a ...interface{}) string
+  -- func Sprintf(format string, a ...interface{}) string
+  -- func Sprintln(a ...interface{}) string
 - Fprint() Atribui o valor em () para alguma váriavel (Qualquer binário):
-    -- func Fprint(w io.Writer, a ...interface{}) (n int, err error)
-    -- func Fprintf(w io.Writer, format string, a ...interface{}) (n int, err error)
-    -- func Fprintln(w io.Writer, a ...interface{}) (n int, err error)
+  -- func Fprint(w io.Writer, a ...interface{}) (n int, err error)
+  -- func Fprintf(w io.Writer, format string, a ...interface{}) (n int, err error)
+  -- func Fprintln(w io.Writer, a ...interface{}) (n int, err error)
 
 ### Criando seu próprio tipo
+
 - Sintaxe
-    --exemplo: type hotdog int
+  --exemplo: type hotdog int
 - A vantagem de criar seus proprios tipos eu ainda n'ao sei, mas acima foi criado o tipo hotdog de sub-tipo inteiro
 
 ### Conversão
-- basta colocar o tipo e oque vocề quer modificar entre () 
-    -- exemplo: a = int(b)
+
+- basta colocar o tipo e oque vocề quer modificar entre ()
+  -- exemplo: a = int(b)
+
+🚀 Cap. 4
+
+### Fundamentos da Programação
+
+- Tipo Boolean
+  -- Funciona normalmente como qualquer outro boolean
+  -- false == nulo
+
+- Tipo Numerico
+  -- int e int32 não são a mesma coisa
+  -- Para "misturá-los" é necessário conversão
+  -- Regra geral: use somente int quando não quiser especificar.
+  --- 🔗 https://www.youtube.com/watch?v=3yIKCLSWAHA&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg&index=24
+
+### -- Overflow
+
+     -- Um uint16, por exemplo, vai de 0 a 65535.
+     -- Se adicionar um numero a uma variavel declarada com uint16 vai zera-la (rodometro)
+
+- Tipo String
+  -- Não muito diferente
+
+### Constantes
+
+- São valores imutáveis.
+- Podem ser tipadas ou não:
+  -- const oi = "Bom dia"
+  -- const oi string = "Bom dia"
+- As não tipadas só terão um tipo atribuido a elas quando forem usadas.
+- exemplo: const (
+    x = 10
+    y = 20
+    z = 30
+)
+
+### Iota
+
+- Numa declaração de constantes, o identificador iota representa números sequenciais.
+- Na prática. https://go.dev/play/p/eSrwoQjuYR
+
+### Deslocamento de bits
 
