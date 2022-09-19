@@ -2,7 +2,7 @@
 https://www.youtube.com/c/AprendaGo/videos
 
 Aula Atual: Cap. 6 – Fluxo de Controle – 1. Entendendo fluxo de controle
-🔗 https://www.youtube.com/watch?v=1G-tbQ6UE_A&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg&index=38
+🔗 https://www.youtube.com/watch?v=QDaiqhTq3TA&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg&index=42
 
 🚀 Cap. 1
 
@@ -164,4 +164,30 @@ Aula Atual: Cap. 6 – Fluxo de Controle – 1. Entendendo fluxo de controle
 - Na prática. https://go.dev/play/p/eSrwoQjuYR
 
 ### Deslocamento de bits
+
+- Algo bem especifico, não preocupar para fins gerais.
+
+🚀 Cap. 5 - Ex. Ninja 2
+
+🚀 Cap. 6 - Fluxo de Controle
+
+### Fluxo de controle SEQUENCIAL
+
+- O código é lido em sequencia e finalizado.
+-- Exemplo: https://go.dev/play/p/R9Zup1GRDV5
+
+### Fluxo de controle de REPETIÇÃO
+
+- O código se repete por meio de um loop repetição
+-- Exemplo: https://go.dev/play/p/uMZiw2Xrvl1
+
+- Em go só existe o for para loop.
+-- O for pode ser usado com o formato completo (declaração, condição e incremento)
+-- Pode tambem ser declarado sem o incremento (fazendo no bloco executado ou não fazendo)
+-- Pode ser declarado sem condição, de modo que vai se repetir em loop até encontrar algum break
+-- Exemplo: https://go.dev/play/p/E-iFqScjzqw
+
+### Fluxo de controle CONDaICIONAL
+
+- O código segue diferentes caminhos por meio de interações de escolha em entidades como if
 
